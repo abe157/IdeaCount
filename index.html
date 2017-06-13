@@ -23,9 +23,31 @@
       <h1>The Good Idea Counter</h1>
     </div>
 
-     <h2>Abe's Good Idea Count </h2>
+ 
+     <script type="text/javascript">
+       var abe_clicks = 5135468;
+       function Abe_Click() {
+       abe_clicks += 1;
+       document.getElementById("Abe_clicks").innerHTML = abe_clicks;
+       };
+     </script>
 
-     <h2>Everyone else's Good Idea Count</h2>
+     <script type="text/javascript">
+       var else_clicks = 0;
+       function Else_Click() {
+       else_clicks += 1;
+       document.getElementById("Else_clicks").innerHTML = else_clicks;
+       };
+     </script>
+
+      <center><h2>Abe's Good Idea Count </h2></center> 
+     <center><h3><a id="Abe_clicks">5135468</a></h3></center>
+     <center><button type="button" onClick="Abe_Click()">Good Idea</button></center>
+    
+     <center><h2>Everyone else's Good Idea Count</h2></center>
+     <center><h3><a id="Else_clicks">0</a></h3></center>
+     <center><button type="button" onClick="Else_Click()">Good Idea</button></center>
+     
 
   </body>
 
